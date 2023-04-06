@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&family=Roboto+Slab:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Navbar*/
+.navbar{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+}
+#bar{
+    font-size: 2rem;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 500;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+ #bar:hover{
+    color:#f10808;
+}
+@media only screen and (max-width: 991px) {
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 20px 0;
+    }
+}
+
+
+
+/* Mobile Nav*/
+.navbar-light .navbar-toggler{
+    border: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+
+.navbar-light .navbar-nav .nav-item {
+    padding: 0 20px;
+    color: rgb(247, 247, 247);
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: rgb(241, 8, 8);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .nav-item:hover:after{
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: rgb(246, 246, 246);
+}
+
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active{
+    color: rgb(241, 8, 8);
+}
+
+/*Home page*/
+#home span{
+    color: rgb(184, 219, 7);
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+button{
+    font-weight: 700;
+    outline: none;
+    background-color: #de0c0c; 
+    border: none;
+    color: #fdfcfc;
+    padding: 13px 30px;
+    transition: 0.3s ease;
+}
+.container h1{
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+.container p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #ffffff;
+}

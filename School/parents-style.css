@@ -1,0 +1,145 @@
+html, body{
+    margin: 0;
+    left: 0;
+    position: flex;
+
+  }
+
+  select {
+    width: 150px;
+    height: 25px;
+
+  }
+  .navbar{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+  }
+  #bar{
+    font-size: 2rem;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 500;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+  }
+  #bar:hover{
+    color: rgb(241, 8, 8);
+  }
+  @media only screen and (max-width: 991px) {
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+  
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+      padding: 20px 0;
+    }
+  }
+
+
+
+  /* Mobile Nav*/
+  .navbar-light .navbar-toggler{
+    border: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+
+
+
+  .navbar-light .navbar-nav .nav-item {
+    padding: 0 20px;
+    color: rgb(247, 247, 247);
+    transition: 0.3s ease;
+  }
+
+  .navbar-light .navbar-nav .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: rgb(241, 8, 8);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .navbar-light .navbar-nav .nav-item:hover:after{
+    width: 100%;
+  }
+  .navbar-light .navbar-nav .nav-item .nav-link{
+    color: rgb(246, 246, 246);
+  }
+
+
+  .navbar-light .navbar-nav .nav-item .nav-link:hover,
+  .navbar-light .navbar-nav .nav-item .nav-link.active{
+    color: rgb(241, 8, 8);
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  table th {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #a60d05;
+    color: #fff;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  table td {
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 300px;
+  }
+  
+  input[type="text"][name="Parent_address"] {
+    height: 100px;
+    width: 500px;
+  }
+ input[type="submit"], button[type="submit"]{
+  background: red;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3 ease;
+ }
+ input[type="submit"]:hover, button[type="submit"]:hover{
+  background: black;
+  color: white;
+ }

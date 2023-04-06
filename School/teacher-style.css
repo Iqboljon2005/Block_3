@@ -1,0 +1,191 @@
+html, body{
+    margin: 0;
+    left: 0;
+    position: flex;
+}
+
+select {
+    width: 150px;
+    height: 25px;
+}
+.navbar{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+  }
+#bar{
+    font-size: 2rem;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 500;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+#bar:hover{
+    color: rgb(241, 8, 8);
+}
+@media only screen and (max-width: 991px) {
+    #navbarSupportedContent > ul{
+      margin: 1rem;
+      justify-content: flex-end;
+      align-items: flex-end;
+      text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 20px 0;
+    }
+}
+/* Mobile Nav*/
+.navbar-light .navbar-toggler{
+    border: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+  
+.navbar-light .navbar-nav .nav-item {
+    padding: 0 20px;
+    color: rgb(247, 247, 247);
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: rgb(241, 8, 8);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .nav-item:hover:after{
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: rgb(246, 246, 246);
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active{
+    color: rgb(241, 8, 8);
+}
+
+/* Style for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Style for the table header */
+  th {
+    background-color: #cb0b0b;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  /* Style for the table rows */
+  th, td {
+    padding: 12px;
+  }
+  
+  /* Style for the table rows on even numbers */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style for the table rows on odd numbers */
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  /* Style for the table headers with the lines */
+  th > br {
+    display: none;
+  }
+  
+  th > hr {
+    border: 0;
+    height: 1px;
+    margin: 0;
+  }
+  
+  /* Style for the form */
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for the form label */
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Style for the form input */
+  input[type="text"] {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+  }
+  
+  /* Style for the form submit button */
+  .btn {
+    background-color: #903809;
+    border: none;
+    color: rgb(236, 5, 5);
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Style for the form submit button on hover */
+  .btn:hover {
+    background-color: #b20606;
+    color: #ffffff;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: #a12413;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"]:hover{
+    background-color: #3e8e41;
+    color: #ffffff;
+  }
+ h3{
+  text-align: center;
+ }
